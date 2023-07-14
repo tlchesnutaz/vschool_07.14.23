@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <link rel="stylesheet" href="index.css">
+    <title>HTML Calculator</title>
+    </head>
+
+    <body>
+        <h1>HTML Calculator</h1>
+
+        <form name="add">  
+            <div id="add">
+                <p class="operation">Add</p>
+                <label for="addNum1">Enter your first number:</label>
+                <input type=number name="addNum1" id="input1"/>
+                <label for="addNum2">Enter your second number:</label>
+                <input type=number name="addNum2"/>
+                <button id="submitAdd">Submit to add numbers</button>
+                <br>
+                <p id="returnAdd"></p>
+            </div>
+        </form> 
+
+        <form name="sub">    
+            <div id="sub">
+                <p class="operation">Subtract</p>
+                <label for="subNum1">Enter your first number:</label>
+                <input type=number name="subNum1"/>
+                <label for="subNum2">Enter your second number:</label>
+                <input type=number name="subNum2"/>
+                <button id="submitSub">Submit to subtract numbers</button>
+                <br>
+                <p id="returnSub"></p>
+            </div>
+        </form> 
+
+        <form name="mult">
+            <div id="mult">
+                <p class="operation">Multiply</p>
+                <label for="multNum1">Enter your first number:</label>
+                <input type=number name="multNum1"/>
+                <label for="multNum2">Enter your second number:</label>
+                <input type=number name="multNum2"/>                    
+                <button id="submitMult">Submit to multiply numbers</button>
+                <br>
+                <p id="returnMult"></p>
+            </div>
+        </form>
+
+
+        <script src="index.js"></script>
+
+    </body>
+
+</html>

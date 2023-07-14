@@ -1,0 +1,39 @@
+html, body{
+    margin: 5px;
+    background-color: rgb(226, 215, 215);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+h1, h3{
+    text-align: center;
+} 
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+form{
+    grid-column: 1/ span 1;
+    grid-row: 1 / span 1;
+}
+
+#zanzibar{
+    grid-column: 2 /span 1;
+    grid-row: 1 /span 1;
+    width: 645px;
+    height: 485px;
+    object-fit: cover;
+    padding: 5px 30px;
+}
+
+#crete{
+    grid-column: 1 /span 2;
+    grid-row: 2/span 2;
+    width: 969px;
+    height: 546px;
+    object-fit: cover;
+    padding: 10px 30px;
+}

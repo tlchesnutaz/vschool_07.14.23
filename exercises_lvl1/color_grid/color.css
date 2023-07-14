@@ -1,0 +1,103 @@
+
+div {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+#box1{
+    display: block;
+    width: 80%;
+    height: 115px;
+    border-style: solid;
+    border-width: 10px 10px 5px 10px;
+    border-color:white;
+    background-color: #F5C6D6;
+}
+
+#box2{
+    display:inline-block;
+    width: 20%;
+    height: 110px;
+    border-style: solid; 
+    border-color: white;
+    border-width: 5px 5px 5px 10px;
+    background-color: #EE2E84;
+}
+
+#box3{
+    display:inline-block;
+    width: 20%;
+    height: 110px; 
+    border-style: solid; 
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    background-color: #EE2E84;
+}
+
+#box4{
+    display:inline-block;
+    width: 20%;
+    height: 110px;
+    border-style: solid; 
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    background-color: #EE2E84;
+}
+
+#box5{
+    display:inline-block;
+    width: 20%;
+    height: 110px;
+    border-style: solid; 
+    border-color: white;
+    border-width: 5px 10px 5px 5px;
+    background-color: #EE2E84;
+}
+
+#box6{
+    display: inline-block;
+    width: 40%;
+    height: 110px;
+    border-style: solid; 
+    border-width: 5px 5px 5px 10px; 
+    border-color: white;
+    background-color: #85CFD8;
+}
+
+#box7{
+    display:inline-block;
+    width: 40%;
+    height: 110px;
+    border-style: solid;
+    border-width: 5px 10px 5px 5px;
+    border-color: white;
+    background-color: #85CFD8;
+}
+
+#box8{
+    display:inline-block;
+    width: 60%;
+    height: 100px;
+    border-style: solid;
+    border-width: 5px 5px 5px 10px;
+    border-color: white;
+    background-color: #8DC63F;
+}
+
+#box9{
+    display:inline-block;
+    width: 20%;
+    height: 100px;
+    border-style: solid;
+    border-width: 5px 10px 5px 5px;
+    border-color: white;
+    background-color: #E76E34;
+}
+
+@media (max-width: 768px) {
+    #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9 {
+        display: block;
+        width: 100%;
+    }  
+}

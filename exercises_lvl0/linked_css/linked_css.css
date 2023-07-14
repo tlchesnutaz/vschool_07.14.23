@@ -1,0 +1,14 @@
+/* for linked css.html */
+
+.dark-coffee {
+    color: rgb(65, 13, 13);
+}
+.medcoff {
+    font-size: 30px; color:rgb(82, 33, 26);
+}
+.ltcoff {
+    color:rgb(156, 70, 35);
+}
+h1, h2 {
+    font-size: 40;
+}

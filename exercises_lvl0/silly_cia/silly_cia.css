@@ -1,0 +1,18 @@
+/* for SillyCIA.html (2nd part) */
+
+.CIA{
+    color:rgb(6, 78, 18)
+}
+.CIA, .DDI {
+    font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;
+}
+.p{
+    line-height: 25px;
+}
+
+.no-underline{
+    text-decoration: none;
+}
+.upper{
+    text-transform: uppercase;
+}

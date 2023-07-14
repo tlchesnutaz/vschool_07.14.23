@@ -1,0 +1,256 @@
+
+/*font-family: 'Julius Sans One', sans-serif;
+font-family: 'Libre Baskerville', serif;*/
+
+@font-face {
+    font-family: 'verdemoderna';
+    font-style: normal;
+    font-weight: normal;
+    src: url('verdemoderna.woff');
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    
+    /*grid-template-areas: 
+    "header header view"
+    "info1 info1 authors"
+    "info2 info2 links"
+    "reqs reqs empty"
+    "footer1 footer1 footer1"
+    "footer2 footer2 footer2";*/
+}
+
+/*remove when done, just to help visually*/
+.box {
+    border: 1px solid black;
+}
+
+.header {
+    background-image: url('huntington.jpg');
+    background-repeat: no-repeat; 
+    background-position: 0% 50%; /* centers background image */
+    background-size: cover; /* positions the background image*/
+    grid-column: 1/3;
+    height: 270px; 
+    display: flex; /* set the ability and which terms to align the divs defaults to row */
+    justify-content: end; /* so the 'view all designs' is to the left*/
+    align-items: center; /* centers the divs vertically*/
+    color: ghostwhite;
+}
+
+
+/* setting to help position text in head*/
+.head {
+    margin-left: 25px; 
+    padding-right: 15%;
+}
+
+/* set font for spec text in header*/
+h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 4vw;
+}
+
+.title {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2vw;
+}
+
+.view {
+    color: ghostwhite;
+    margin-right: 10px;
+    font-family: 'Julius Sans One', sans-serif;
+    
+} 
+
+/* line spacing, indent for info divs*/
+p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* primary font info for info divs*/
+.info1, .info2, .reqs, footer1 {
+    font-family: 'Libre Baskerville', serif;
+    line-height: 2;
+    font-size: 80%;
+    
+}
+
+
+.authors {
+    background-color: #edf4f0;
+   
+}
+
+/* empty div*/
+.empty {
+    background-color: #edf4f0;
+
+}
+
+/* background image, settings for info2/links divs*/
+.bg2 {
+    background-image: url('bamboo.png');
+    background-color: rgba(135, 190, 160, .5);
+    background-attachment: fixed;
+    
+}
+
+
+/* dave shea footer*/
+.footer1 {
+    height: 270px;
+    background-image: url('koi.jpg');
+    background-position: 0% 50%;
+    background-size: cover;
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    color:rgba(205, 235, 225, 0.5);
+    font-size: 3vw;
+    font-style: italic;
+    
+}
+
+/* the icons footer*/
+.footer2 {
+    grid-column: 1/3;
+    font-family:'verdemoderna';
+    background-color: #134347;
+    font-size: 50px;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.footer2 > a {
+    color:rgba(205, 235, 225, 0.5);
+
+}
+
+.foot1 > a {
+    color:rgba(205, 235, 225);
+    font-style: normal;
+}
+
+/* referencing both author and links ul*/
+ul {
+    list-style-type: none; /*removes bullets*/
+    margin-top: 50px; /*pushes text down*/
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* referencing authors ul*/
+.authors > li { /*referencing the ul class name*/
+    border-bottom: 1px solid #d9e3dc; 
+    width: 80%;
+    padding: 20px 0px;
+   
+} 
+
+/* remove border/line under last li*/
+.authors > ul > li:nth-last-of-type(1) {
+    border-bottom: none; 
+    padding: 20px 0px;
+}
+
+/* set the font of the first <a> in both ul's to JSO*/
+li > a:nth-of-type(1) {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+/* referencing links ul*/
+.links > li {
+    border-bottom: 1px solid #c0cac3;
+    width: 80%;  /*width of lines*/
+    padding: 20px 0px; /*space between text and lines*/
+}
+
+/* add border/line on top of first li*/  
+.links > ul > li:nth-of-type(1) {
+    border-top: 1px solid #c0cac3;
+    
+}
+
+/* remove lines under hyperlinks*/
+a:link {
+    text-decoration: none;
+    }
+
+
+@media (max-width: 400px){
+    .circle {
+        position: relative;
+        left: 100px;
+        bottom: 75px;
+        height: 35px;
+        width: 35px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container{
+    grid-template-columns: 1fr;
+    
+}
+.authors{
+    grid-row: 10;
+}
+.links{
+    grid-row: 11;
+}
+.empty{
+    display: none;
+} */
+
+/*Don't use this...
+@media only screen and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "view"
+        "info1"
+        "info2"
+        "reqs"
+        "footer1"
+        "footer2"
+        "authors"
+        "links"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}*/

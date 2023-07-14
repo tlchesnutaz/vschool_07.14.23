@@ -1,0 +1,246 @@
+/*
+font-family: 'Mukta', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+other possibilities: mitr, solitreo, halant
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ebe6dc;
+    font-family: 'Fira Sans', sans-serif;   
+}
+
+/*HEADER*/
+header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-block: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: #695f55;
+    font-weight: 400;
+    padding: 5px 20px;
+}
+
+header a:hover {
+    color: #2d2323;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.site-logo {
+    font-size: 30px;
+    margin-right: auto;
+}
+
+/*FOOTER*/
+footer {
+    color: #695f55;
+    height: 110px;
+    padding: 10px;
+    display: flex;  
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.disclaimer {
+    font-size: 16px;
+}
+
+.foot-logo {
+    text-decoration: none;
+    color: #695f55;
+    font-size: 18px;
+}
+
+.f, .git, .insta, .twit {
+    margin: 15px 10px 0px 10px;
+    font-size: 20px;   
+}
+
+/* .social {
+    
+    
+} */
+
+/*HOME*/
+.title { 
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 22px; 
+    margin-bottom: 40px;
+}
+
+p {
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/historic.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+    color: whitesmoke;
+    padding: 45px 20px; 
+}
+
+.container a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: whitesmoke;
+    border: none;
+    margin-top: 25px;
+    padding: 10px 20px;
+    color: #2d2323;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;    
+}
+
+.container a:hover {
+    transform: translate(1px, 1px);
+}
+
+/*SEARCH*/
+label {
+    border-radius: 5px;
+    font-size:18px;
+    font-style: italic;
+}
+
+select {
+    margin: 450px 15px 5px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #695f55;
+    color: #2d2323;
+    padding: 5px;   
+}
+
+button {
+    background-color: whitesmoke;
+    border: 1px solid #695f55;
+    color: #2d2323;
+    padding: 6px 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px; 
+    transition: transform .1s ease-in-out; 
+}
+
+button:hover {
+    transform: translate(1px, 1px);
+}
+
+.form {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/iowa_library.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    color: #f5f5f5;
+    padding: 20px; 
+}
+
+.rec-list {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 200px;
+    color: #f5f5f5;
+    padding: 20px; 
+}
+
+.g-link {
+    color:#2d2323;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 14px;
+}
+
+.g-link:hover {
+    color:#695f55;
+}
+
+.key { /* this is spacing between name and activities */
+    line-height: 2px;
+    padding-bottom: 1px;
+}
+
+.activities {
+    text-transform: lowercase;
+    line-height: 8px;
+    font-size: 18px;
+    margin-top: 5px;
+}  
+
+.fav {
+    margin-left: 8px;
+    color: rgb(230, 105, 35);
+    font-size: 22px;
+}
+
+.heart {
+    display: inline;
+}
+
+/*FAVORITES*/
+.saved {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/lake.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    padding: 20px; 
+    min-height: 500px;
+}
+.g-link-saved {
+    color: #f5f5f5;
+    font-weight: 400;
+}
+
+
+/* .container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "main main main fourth"
+      "main main main fourth"
+      "second second third third";
+  }
+  .main { grid-area: main; }
+  .second { grid-area: second; }
+  .third { grid-area: third; }
+  .fourth { grid-area: fourth; } */ 

@@ -1,0 +1,26 @@
+body, html {
+    margin: 5px;
+}
+
+h4 {
+    display:inline;
+}
+
+.button {
+    display: block;
+    height: 30px;
+    width: 155px;
+    background-color: rgb(235, 180, 150);
+    color: rgb(50, 110, 50);
+    margin: 10px    
+} 
+
+.input {
+    display: block;
+}  
+
+p {
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+}
+

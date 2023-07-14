@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <title>Transcendental Travels</title>
+    </head>
+
+    <body>
+        <h1>Welcome to Transcendental Travels</h1>
+        <h3>Where we go above and beyond to satisfy your wanderlust!</h3>
+        
+        <div id="container">
+
+            <form name="travForm">
+                Please fill out the following form:
+                <br/>
+                <input type="text" name="firstName" id="fName"/>
+                <label for="fName">First Name</label>
+                <br/>
+                <input type="text" name="lastName" id="lName"/>
+                <label for="lName">Last Name</label>
+                <br/>
+                <input type="number" name="age" id="age"/>
+                <label for="age">Age</label>
+                <br/>
+                <br/>
+                <label for="travLocation">Where are you traveling to?</label>
+                <br>
+                <select name="travLocation" id="travLocation">
+                    <option value="sayulita">Sayulita, Mexico</option>
+                    <option value="crete">Crete, Greece</option>
+                    <option value="tortugas">Dry Tortugas, Florida</option>
+                </select>
+                <br/>
+                <br/>
+                Do you have any dietary needs?
+                <br/>
+                <input type="checkbox" name="diet" id="kosher" value=" kosher"/>
+                <label for="kosher">Kosher</label>
+                <br/>
+                <input type="checkbox" name="diet" id="vegan" value=" vegan"/>
+                <label for="vegan">Vegan</label>
+                <br/>
+                <input type="checkbox" name="diet" id="gluten" value=" gluten free"/>
+                <label for="gluten">Gluten free</label>
+                <br/>
+                <input type="checkbox" name="diet" id="lactose" value=" lactose free"/>
+                <label for="lactose">Lactose free</label>
+                <br/>
+                <br/>
+                <label for="accomods">Do you need any reasonable accommodations (including any dietary needs not listed above)?</label>
+                <br/>
+                <input type="radio" name="accommods" id="no" value="No"/>
+                <label for="no">No</label>
+                <input type="radio" name="accommods" id="yes" value="Yes"/>
+                <label for="yes">Yes</label>
+                <br/>
+                <label for="accommodRequest">If yes, please type your accomodation request:</label>
+                <br/>
+                <input type="text" name="accommodRequest" id="accommodRequest"/>
+                <br/>
+                <br/>
+                We only request this information because you will be on the plane for a while, 
+                we want to do our best to make sure you are as comfortable as possible.
+                <br/>
+                <button id="submit">Submit</button>
+        
+            </form>
+        
+        <img id="zanzibar" src="zanzibar_edit.jpg" alt="Arial view of beach, palm trees, straw huts, people walking">
+        
+        <img id="crete" src="crete_greece_edit.jpg" alt="Beach with hilly mountians in background, shallow clear turquoise water.">
+        
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+
+</html>

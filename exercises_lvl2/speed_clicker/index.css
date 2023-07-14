@@ -1,0 +1,25 @@
+html, body{
+    height: 100%;
+    background-color: rgb(205, 235, 210);
+}
+
+#container{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+#countBox {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    line-height: 200px;
+     /*this aligns the text in the center vertically
+     and has to be set to the height value*/
+    width: 200px;
+    height: 200px;
+    background-color: rgb(5, 65, 10);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}

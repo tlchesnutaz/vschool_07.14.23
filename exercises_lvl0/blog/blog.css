@@ -1,0 +1,37 @@
+html, body {
+    margin: 0px;
+    padding: 10px;
+   /* this moves the title down so it shows below the nav-bar */
+}
+
+.title{
+    margin: 100px;
+    }
+
+.nav-bar{
+    position: fixed;
+    width:99%;
+    margin: 0px;
+    background-color: cornflowerblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img{
+    float: right;
+    margin-top: 50px;
+}
+
+.current{
+    position: relative;
+    left: 50px;
+}
+
+.past{
+    position: relative;
+    left: 105px;
+
+}
+.about{
+    position: relative;
+    left: 160px;
+}

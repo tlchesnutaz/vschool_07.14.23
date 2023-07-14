@@ -1,0 +1,16 @@
+h2{
+    color: darkgreen;
+}
+h3{
+    display: inline-block; 
+    width: 50%;
+    color: darkmagenta;
+}
+h4{
+    display: inline-block;
+    color: olivedrab;
+}
+p{
+    display: inline-block;
+    width: 48%;
+}

@@ -1,0 +1,61 @@
+/*font-family: 'Yomogi', cursive;*/
+
+* {
+  box-sizing: border-box; 
+}
+
+.header {
+  margin-left: 10px;
+  font-size: larger;
+}
+
+body, .form-input, .submit, .edit, .delete, .cancel, .update {
+  font-family: 'Yomogi', cursive;  
+}
+
+.ut-img {
+  max-width: 200px;
+  margin-left: 25px;
+}
+
+.form-input-img {
+  min-width: 298px;
+  margin: 5px;
+  font-family: 'Yomogi', cursive;
+} 
+
+.form-input, .submit {
+  margin: 5px;
+}
+
+.delete, .update {
+  margin-left: 5px;
+}
+
+.mapped-img {
+  max-width: 200px;
+  margin-top: 5px;
+}
+
+p {
+  margin: 0px;
+}
+
+.edit, .delete, .cancel, .update {
+  margin-top: 5px;
+}
+
+.line {
+  background: black;  
+  margin: 7px 0px 5px 0px;
+  width: 200px;
+  }
+
+ul{
+  padding-left: 15px;
+}
+
+li {
+  list-style-type: none;
+  
+}

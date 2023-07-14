@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1>Forms Part 1 </h1>
+        <h4>Forms Practice</h4>
+
+        <form name="my_form">
+            
+<!-- naming the form allows us to grab the form without having to do a getElementById, etc.
+    placeholder tells the user what to put in the box 
+    required - browser will enforce an input before allowing user to hit submit -->
+
+            <input type="text" name="firstName" placeholder="First Name" required/>
+            <input type="text" name="lastName" placeholder="Last Name"/>
+            <input type="number" name="age"/>
+            <input type="tel" name="telephone"/>
+            <input type="password" name="password"/>
+            <input type="date" name="birthdate"/>
+            <input type="color" name="favColor"/>
+
+            <br/>
+            Do you drive?
+
+            <br/>
+            Yes:  <input type="radio" name="yes_no" value="Yes"/>
+            No:   <input type="radio" name="yes_no" value="No"/>
+
+            <br/>
+            Which do you like? Select all that apply:
+
+            <br/>
+            Cupcakes:  <input type="checkbox" value="cupcakes" name="favFood"/>
+            Ice Cream: <input type="checkbox" value="iceCream" name="favFood"/>
+
+            <br/>   
+            <select name="city">
+                <option value="boston">Boston</option>
+                <option value="london">London</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+
+
+            <button>Submit</button>
+
+        </form>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>
+

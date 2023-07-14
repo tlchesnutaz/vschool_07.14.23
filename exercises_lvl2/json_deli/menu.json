@@ -1,0 +1,87 @@
+{
+    "title":"Welcome to JSON's Deli",
+    "subtitle1": "Where everything is made fresh, from scratch, with a twist for your tastebuds!",
+    "subtitle2": "What we don't bake, raise or grow ourselves, we source from local farms, so we know what goes into our food.",
+    
+    "Hot Sandwiches": [
+        {
+            "name": "Regal Reuben",
+            "desc": "Our spin on the classic with sustainably sourced shredded venison and smoked swiss.",
+            "ingredients": [
+                "slowcooked shredded venison",
+                "our own sauerkraut",
+                "carmelized onions",
+                "melted smoked swiss cheese",
+                "fresh horseradish",
+                "toasted marbled rye"
+            ]
+        },
+        {
+            "name": "First Choice Chicken Parm",
+            "desc": "What more can we say ;)",
+            "ingredients": [
+                "perfectly cooked chicken, choice of breaded or not",
+                "melted smoked mozzarella",
+                "our own from Italy family recipe sauce",
+                "pesto",
+                "toasted ciabatta roll"
+            ]
+        }
+    ],
+
+    "Cold Sandwiches": [
+        {
+            "name": "Verdurous Veggie",
+            "desc": "Seasonal fresh produce, choice of cheese and bread.",
+            "ingredients": [
+                "Ask about our weekly available produce",
+                "herb & roasted garlic hummus",
+                "choice of cheese and bread"
+            ]
+        },
+        {
+            "name": "Capitol Curry Tuna",
+            "desc": "",
+            "ingredients": [
+                "Tuna mixed with green curry, mayo, rice vinegar, and chopped scallions",
+                "sliced golden delicious apples",
+                "brie",
+                "on gluten free roti"
+            ]
+        }
+    ],
+    "Drinks": [
+        {
+            "name": "Sunbrewed Iced Tea",
+            "desc": "Fresh sunbrewed iced tea"
+        },
+        {
+            "name": "Lemonade",
+            "desc": "Fresh squeezed lemonade"
+        }
+    ],
+
+    "Appetizers": [
+        {
+            "name": "Nachos",
+            "desc": "Tortilla chips, sliced black olives, jalapenos, scallions, shredded chedder and pepperjack, salsa fresca, homemade quacamole and sour cream."
+        },
+        {
+            "name": "Stuffed Mushrooms",
+            "desc": "Button mushroom caps stuffeed with stems, green bell pepper, vialia onion, gf breadcrumbs and a blend of Parm, Romano and Asiago cheeses."
+        }
+    ],
+
+    "Desserts":
+    [
+        {
+            "name": "Cheesecake",
+            "desc": "A slice of our version of a NY style cheesecake on a gf crust. Topped with fresh seasonal berries or our own slow cooked caramel sauce."
+        },
+        {
+            "name": "GF Cinnamon Crumb Cake",
+            "desc": "Light, moist cake with a thick ribbon of cinnammon and topped with a crunchy cinnamon crumb topping."
+        }
+    ]
+
+}

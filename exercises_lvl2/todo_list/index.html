@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
+          </style>
+        <link href="index.css" rel="stylesheet"> 
+        
+        <title>Todo List</title>
+    </head>
+
+    <body>
+
+        <div id="pageTitle">
+            <h2 id="todoTitle">TODO App</h2>
+            <p>(made with Axios, HTML, CSS & JS)</p>
+            <h3 id="addTitle">Add Todos:</h3>
+        </div>
+   
+            <form name="todoForm" id="addTodo">
+                <label class="label" for="title">Todo</label>
+                <input type="text" name="title" placeholder="Title"/>
+                <label class="label" for="description">Description</label>
+                <input type="text" name="description" placeholder="Description"/>
+                <label class="label" for="price">Price</label>
+                <input type="number" name="price" placeholder="Price"/>
+                <label class="label" for="imgUrl">Image (opt)</label>
+                <input id="img" name="imgUrl" placeholder="Image Url"/>
+                <br>
+                <button>Add Todo</button>
+            </form>
+       
+        <div id="listTitle">
+            <h3>Your Todos:</h3>
+        </div>
+
+        <div id="todoList">            
+        </div>
+                    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.3/axios.min.js" integrity="sha512-wS6VWtjvRcylhyoArkahZUkzZFeKB7ch/MHukprGSh1XIidNvHG1rxPhyFnL73M0FC1YXPIXLRDAoOyRJNni/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="index.js"></script>
+
+    </body>
+
+</html>
+

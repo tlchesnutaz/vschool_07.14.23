@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="index.css">
+            
+    </head>
+
+    <body>
+        <h1>Mario's Pest Control</h1>
+        <h2>Invoice for: Princess Peach</h2>
+        
+        <div class="container">
+
+            <img src="profile_goomba_resize.png" alt="An angry mushroom looking creature.">
+            <div class="goomba">
+                <label for="goomba">Goombas caught:</label> 
+                <input type="number" name="goomba" id="goomba" value="1" onblur="reSum()"/>
+                <p>@ 5 Coins each</p>
+            </div> 
+        
+            <img src="bob_omb_resize.png" alt="Bomb with eyes, feet and wind up in back.">
+            <div class="bomb">
+                <label for="bomb">Bob ombs caught:</label>
+                <input type="number" name="bomb" id="bomb" value="1" onblur="reSum()"/>
+                <p>@ 7 Coins each</p>
+            </div>
+
+            <img src="spiny_cheep_resize.png" alt="Angry purple fish with spikes on it's back.">
+            <div class ="cheep">
+                <label for="cheep">Cheep cheeps caught:</label>
+                <input type="number" name="cheep" id="cheep" value="1" onblur="reSum()"/>
+                <p>@ 11 Coins each</p>
+            </div>    
+
+            <div class="totBox">
+                <label for="total">Total:</label>
+                <input type="number" id="total" name="total" value=""/>    
+            </div>
+
+            <footer>
+                <address>
+                    Mario Pest Control<br>
+                    1983 Fungi Lane<br>
+                    Mushroom Kingdom, Nintendo 62746<br>    
+                    mariopestcontrol@gmail.com<br>
+                    www.mariopestcontrol.com<br>
+                </address>
+            </footer>
+            
+        </div>
+
+        <script src="index.js"></script> 
+    </body>
+
+</html>

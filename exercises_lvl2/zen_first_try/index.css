@@ -1,0 +1,53 @@
+div {
+    border: 1px solid black;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(auto);
+}
+
+.header {
+        
+    background-image: url('huntington.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / span 2;
+}
+
+.info2 {
+    background-image: url('bamboo.png');
+    background-color: rgba(135, 190, 160, .5);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#footer1{
+    background-image: url('koi.jpg');
+}
+
+.header, #view {
+    grid-row: 1 /span 1;
+    text-align: center;
+}
+
+#view {
+    grid-column: 2 / -1;
+}
+
+#view::after {
+    content: ">"
+}
+
+.info1, .info2, .reqs {
+    font-family: 'Libre Baskerville', sans-serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cir {
+    max-width: 100px;
+    height: auto;
+}
