@@ -4,27 +4,26 @@ import { AxiosContext } from "../context/AxiosContext"
 
 export default function AddPetForm() {
 
-    const { pets, addPet } = useContext(AxiosContext) // getPets?
-    console.log(pets)
+    const { pets, addPet } = useContext(AxiosContext)
 
     const initInputs = {
-        petName: pets.petName || '',
-        species: pets.species || '',
-        specific: pets.specific || '',
-        dob: pets.dob || '',
-        acquired: pets.acquired || '', 
-        gender: pets.gender || '',
-        neutered: pets.neutered || '',
-        chipNum: pets.chipNum || '',
-        lastVac: pets.lastVac || '',
-        vetName: pets.vetName || '',
-        vetPhone: pets.vetPhone || '',
-        notes: pets.notes || '',
-        owner: pets.owner || '',
-        // ? petPic: pets.petPic || ''
+        petName:pets.petName || "" ,
+        species:pets.species || "" ,
+        specific:pets.specific || "" ,
+        dob:pets.dob || "" ,
+        acquired:pets.acquired || "" ,
+        gender:pets.gender || "" ,
+        neutered:pets.neutered || "" ,
+        chipNum:pets.chipNum || "" ,
+        lastVac:pets.lastVac || "" ,
+        vetName:pets.vetName || "" ,
+        vetPhone:pets.vetPhone || "" ,
+        notes:pets.notes || "" ,
+        owner:pets.owner || "" 
     }
-    const [inputs, setInputs] = useState(initInputs)
 
+    const [inputs, setInputs] = useState(initInputs)
+    
     function handleChange(e){
         const {name, value, type, checked} = e.target
         setInputs(prevInputs => ({...prevInputs, [name]: type === "checkbox" ? checked : value}))
@@ -32,16 +31,13 @@ export default function AddPetForm() {
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log(inputs)
-        addPet(inputs, inputs.owner)
-
+            addPet(inputs, inputs.owner)
+        
         setInputs(initInputs)
     }
-
+    
     return(
-        
-        <form className="form" onSubmit={handleSubmit}>
-            
+        <form className="form" onSubmit={handleSubmit}>   
             <input 
                 type="text" 
                 name="petName" 
@@ -111,22 +107,22 @@ export default function AddPetForm() {
                 <legend> Spayed/Neutered: </legend>
                 <input 
                     type="radio"
-                    id="true"
+                    id="yes"
                     name="neutered" 
-                    value="true"
-                    checked={inputs.neutered === "true"} 
+                    value="yes"
+                    checked={inputs.neutered === "yes"} 
                     onChange={handleChange}
                 />
-                <label htmlFor="true"> Yes </label>
+                <label htmlFor="yes"> Yes </label>
                 <input 
                     type="radio"
-                    id="false"
+                    id="no"
                     name="neutered"
-                    value="false"
-                    checked={inputs.neutered === "false"}
+                    value="no"
+                    checked={inputs.neutered === "no"}
                     onChange={handleChange}
                 />
-                <label htmlFor="false"> No </label>    
+                <label htmlFor="no"> No </label>    
             </fieldset>
             <input 
                 type="text" 
@@ -191,10 +187,9 @@ export default function AddPetForm() {
                 value={inputs.petPic}
                 accept="image/*"
                 onChange={handleChange}  
-            /> 
-            NEED TO FIGURE THIS OUT - see notes in pet.js */}
-            <button> Add Pet </button>
-
+            /> */}
+            
+            <button>Add Pet</button>
         </form>   
     )
 }

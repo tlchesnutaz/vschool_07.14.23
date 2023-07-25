@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import Home from "./components/Home"
 import AddPetForm from "./components/AddPetForm"
-import PetCard from "./components/PetCard"
+import PetList from "./components/PetList"
 import { FaGithub, FaFacebookF, FaInstagram, FaTwitter, FaRegCopyright } from "react-icons/fa"
 // install react-icons, info on https://www.npmjs.com/package/react-icons
 
@@ -12,7 +12,6 @@ export default function App() {
   return (
 
     <Router>
-
       <header>
         <Link className="header-logo" to="/" style={{padding: 10 }}> CareCoordinator </Link>
         <nav style={{ margin: 10 }}>
@@ -24,7 +23,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/addpetform" element={<AddPetForm />} />
-        <Route path="/petcard" element={<PetCard />} />
+        <Route path="/petcard" element={<PetList />} />
       </Routes>
 
       <footer>
@@ -32,7 +31,6 @@ export default function App() {
           <span className="social">< FaFacebookF className="face"/>< FaGithub className="git"/>< FaInstagram className="insta" />< FaTwitter className="twit"/></span>
           <p className="disclaimer"> Disclaimer: </p>
       </footer>
-
     </Router>
       
   )

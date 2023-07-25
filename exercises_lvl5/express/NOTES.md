@@ -46,7 +46,7 @@
 # Intro to REST API architechture 
     # REST - Representational State Transfer (SOAP is another)
 
-    # resource - single item (object) in a database (/user)
+    # resource/(document?) - single item (object) in a database (/user)
 
     # collection - collection of similar items in a db (/users)
 

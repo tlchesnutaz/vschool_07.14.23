@@ -7,7 +7,6 @@ const dbUrl = process.env.MONGODB_URL
 app.use(express.json())
 app.use(morgan('dev'))
 
-
 mongoose.set('strictQuery', true),  
 mongoose.connect(dbUrl,
     (err) => {  

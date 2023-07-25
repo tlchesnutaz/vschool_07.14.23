@@ -38,11 +38,11 @@ userRouter.get("/", (req, res, next) => {
 // Get by filter query
 userRouter.get("/search/state", (req, res, next) => {
     User.find({ state: req.query.state }, (err, users) => {
-    if(err){
-        res.status(500)
-        return next(err) 
-     }
-     return res.status(200).send(users)
+        if(err){
+            res.status(500)
+            return next(err) 
+        }
+        return res.status(200).send(users)
     })
 })
 

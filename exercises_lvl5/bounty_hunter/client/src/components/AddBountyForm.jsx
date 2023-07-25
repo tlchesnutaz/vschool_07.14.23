@@ -24,7 +24,8 @@ export default function AddBountyForm(props){
             props.edit(inputs, props._id)
             props.setToggleEdit(prevToggle => !prevToggle)
         } else {
-            props.addBounty(inputs, props._id)}
+            props.addBounty(inputs, props._id)
+        }
         
         //props.submit(inputs)
         setInputs(initInputs)
