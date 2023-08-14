@@ -24,7 +24,6 @@ mongoose.connect(dbUrl,
         console.log("Connected to the DB")}
     )
 
-
 app.use('/auth', require('./routes/authRouter.js'))
 app.use('/api', expressjwt({ secret: process.env.SECRET, algorithms: ['HS256'] })) // req.user
 app.use('/api/todo', require('./routes/todoRouter.js'))

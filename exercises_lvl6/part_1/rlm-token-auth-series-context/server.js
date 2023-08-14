@@ -4,7 +4,6 @@ require('dotenv').config()
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const dbUrl = process.env.MONGODB_URL
-//var { expressjwt: jwt } = require('express-jwt')
 const { expressjwt } = require('express-jwt')
 
 

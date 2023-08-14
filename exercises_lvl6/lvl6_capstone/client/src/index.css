@@ -1,0 +1,92 @@
+/* font-family: 'Tajawal', sans-serif; */
+
+* {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.25;
+
+  color: hsla(0, 0%, 100%, 0.85);
+  background-color: hsl(0, 0%, 60%);
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Everything is a child of this node, so set its height to take up 
+the full page (or more/less), then set padding at the bottom that 
+footer will fit in. */
+#root {
+  position: relative;
+  min-height: 95vh;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+
+/* header {
+  position: relative;
+  height: 80px;
+  width: 100%;
+} */
+
+/* Set the height of your Footer equal to the padding that you 
+left for it in your #root.  To make it stay at the bottom, set 
+position to absolute. If Home grows larger, your Footer will move 
+down to remain at the bottom of the page. */ 
+footer {
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.auth-container {
+  position: relative;
+  /*text-align: center;*/
+}
+
+form {
+  display: flexbox; /* ? or grid? */
+  
+}
+
+
+/* link styling */
+a {
+  text-decoration: inherit;
+}
+a:hover {
+  color: hsl(60, 75%, 75%);
+}
+.active {
+  color: hsl(60, 75%, 75%);
+}
+
+
+/* button styling */
+button {
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-color: hsl(0, 0%, 30%);
+  cursor: pointer;
+  padding: 5px;
+}
+button:hover {
+  border: 2px solid hsl(0, 0%, 100%, 0.85);
+}
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+
+.key {
+  border: 1px solid hsla(0, 0%, 100%, 0.85);
+}
